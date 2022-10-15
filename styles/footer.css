@@ -1,0 +1,29 @@
+footer {
+    padding: 10px;
+    background-color: var(--main-color);
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+footer li {
+    list-style: none;
+    font-size: 1.1em;
+    margin: 5px 10px;
+}
+
+footer div {
+    padding: 20px;
+    width: 50%;
+}
+
+.footer-ar {
+    direction: rtl;
+    border-right: 1px solid black;
+}
+
+.footer-en {
+    direction: ltr;
+    border-left: 1px solid black;
+}

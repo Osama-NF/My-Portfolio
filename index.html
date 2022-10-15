@@ -2,62 +2,302 @@
 <html>
 <head>
     <meta content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <script src="scripts/mainScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/queries.css">
     <title>Osama Alfahad | أسامة الفهد</title>
 </head>
 <body>
 
     <header>
         <h1>أسامة بن ناصر الفهد</h1>
-        <h1>Osama Nasser Alfahad</h1>
+        <h1>Osama Nasser Alfahad</h1> 
     </header>
 
     <main>
-        <div class="main-page">
-            <div class="block">
+
+        <!-- HOME Buttons -->
+        <span class="home-btn right d-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+            </svg>
+        </span>
+        <span class="home-btn left d-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+            </svg>
+        </span>
+
+        <!-- NAV Page -->
+        <div class="nav-page page">
+            <div class="nav-btn" data-page="work-page">
                 <h1>خبرات العمل</h1>
-                <h1>Work Experince</h1>
+                <h1>Work Experience</h1>
             </div>
-            <div class="block">
-                <h1>الشهادات العلمية</h1>
+            <div class="nav-btn" data-page="edu-page">
+                <h1>التعليم والشهادات</h1>
                 <h1>Education & Certificates</h1>
             </div>
-            <div class="block">
+            <div class="nav-btn" data-page="qual-page">
                 <h1>المؤهلات الاخرى</h1>
                 <h1>Other Qualifications</h1>
             </div>
-            <div class="block">
-                <h1>المهارات</h1>
-                <h1>Skills</h1>
+            <div class="nav-btn" data-page="skill-page">
+                <h1>اللغات والمهارات</h1>
+                <h1>Languages & Skills</h1>
             </div>
         </div>
 
-        <div class="work-page d-none"></div>
-        <div class="edu-page d-none"></div>
-        <div class="qual-page d-none"></div>
-        <div class="skill-page d-none"></div>
+        <!-- Other Pages -->
+        <div class="work-page page d-none">
+            
+            <div class="ar-page">
+                <h2>خبرات العمل</h2>
+                <hr>
+                <ul>
+                    <li><h3>مترجم</h3>
+                        <ul>
+                            <li>مركز السبت لمساعدات السيارات - من 2016 إلى 2021</li>
+                            <li>ترجمة الخطابات من وإلى مصانع Gabriel في أمريكا والصين</li>
+                            <li>بنظام ساعات مرنة, بدون تسجيل بالتأمينات</li>
+                        </ul>
+                    </li>
+                    <li><h3>ممثل خدمة عملاء - في منصة فسح</h3>
+                        <ul>
+                            <li>شركة العرض المتقن - من 2022/2/8 ومازلت على رأس العمل</li>
+                            <li>الشهر الأول: في خدمة العملاء</li>
+                            <li>الشهر الثاني إلى الخامس: عملت في تطوير وإدارة موقع محلي<br> لإدارة المعلومات في المركز</li>
+                            <li>الشهر السادس وإلى الان: أعمل مع الدعم الفني</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="en-page">
+                <h2>Work Experience</h2>
+                <hr>
+                <ul>
+                    <li><h3>Translator</h3>
+                        <ul>
+                            <li>Alsabt Center for Shock Absorbers (2016 -2021)</li>
+                            <li>Translating emails to and from Gabriel in USA & China</li>
+                            <li>Not registered in Social Insurance, with flexible working hours</li>
+                        </ul>
+                    </li>
+                    <li><h3>Customer Service Representative - Fasah Platform</h3>
+                        <ul>
+                            <li>Perfect Presentation (2022/02/08 - present)</li>
+                            <li>1st month: working in customer service</li>
+                            <li>2nd to 5th month: worked on developing and managing a local website that manages information in the customer service center</li>
+                            <li>6th to present: working with Application Support</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="edu-page page d-none">
+
+            <div class="ar-page">
+                <h2>التعليم والشهادات</h2>
+                <hr>
+                <ul>
+                    <li><h3>بكالوريوس شريعة - جامعة الإمام محمد بن سعود الإسلامية</h3>
+                        <ul>
+                            <li>تقدير عام (ممتاز) مع مرتبة الشرف الثانية</li>
+                            <li>معدل (4.55 من 5)</li>
+                            <li>من 2017 إلى 2020</li>
+                        </ul>
+                    </li>
+                    <li><h3>شهادة تقنية المعلومات الاحترافية - مقدمة من Google</h3>
+                        <ul>
+                            <li>أساسيات الدعم الفني</li>
+                            <li>شبكات الكمبيوتر</li>
+                            <li>أنظمة التشغيل</li>
+                            <li>إدارة الانظمة</li>
+                            <li>أمن تقنية المعلومات</li>
+                        </ul>
+                    </li>
+                    <li><h3>دورات مختلفة في مجال البرمجة - مقدمة من Flex Courses</h3>
+                        <ul>
+                            <li>إدارة نسخ البرمجة باستخدام git</li>
+                            <li>تصميم صفحات الانترنت باستخدام HTML & CSS</li>
+                            <li>البرمجة باستخدام جافاسكريبت JavaScript</li>
+                            <li>jQuery من الصفر إلى الاحتراف</li>
+                            <li>بناء صفحات الانترنت المرنة باستخدام Bootstrap V4</li>
+                            <li>أساسيات نظام لينكس</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/1jlnevBijZlb4-7yJquRme8-keqtWIrQfDg5-Pc0mpNs/edit?usp=sharing" target="_blank">قائمة كاملة بالدورات</a></li>
+                </ul>
+            </div>
+
+            <div class="en-page">
+                <h2>Education & Certificate</h2>
+                <hr>
+                <ul>
+                    <li><h3>Sharia (Islamic Law) Bachelor's degree - Imam Islamic University</h3>
+                        <ul>
+                            <li>"Excellent" grade, Second Class Honor</li>
+                            <li>GPA (4.55 - 5)</li>
+                            <li>2017 - 2020</li>
+                        </ul>
+                    </li>
+                    <li><h3>Google IT Support Professional Certificate</h3>
+                        <ul>
+                            <li>Technical Support Fundamentals</li>
+                            <li>The Bits & Bytes of Computer Networking</li>
+                            <li>Operating Systems & You: Becoming a Power User</li>
+                            <li>System Administration & IT infrastructure Services</li>
+                            <li>IT Security: Defense against the digital dark arts</li>
+                        </ul>
+                    </li>
+                    <li><h3>Multiple courses in programming - Given by Flex Courses</h3>
+                        <ul>
+                            <li>Version Control Using git</li>
+                            <li>Website Design with HTML & CSS</li>
+                            <li>Programming Using JavaScript</li>
+                            <li>jQuery From Zero to Hero</li>
+                            <li>Building Responsive Web Pages with Bootstrap v4</li>
+                            <li>Linux Operating System basics</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/1jlnevBijZlb4-7yJquRme8-keqtWIrQfDg5-Pc0mpNs/edit?usp=sharing" target="_blank">Full list of all courses</a></li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <div class="qual-page page d-none">
+            
+            <div class="ar-page">
+                <h2>المؤهلات الاخرى</h2>
+                <hr>
+                <ul>
+                    <li><h3>المركز الوطني للقياس: القدرة المعرفية العامة</h3>
+                        <ul>
+                            <li>درجة الاختبار: 90 من 100</li>
+                        </ul>
+                    </li>
+                    <li><h3>المركز الوطني للقياس: اختبار كفايات اللغة الانجليزية - STEP</h3>
+                        <ul>
+                            <li>درجة الاختبار: 93 من 100</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="en-page">
+                <h2>Other Qualifications</h2>
+                <hr>
+                <ul>
+                    <li><h3>National Center for Assessment: Cognitive Ability Test</h3>
+                        <ul>
+                            <li>Total Score: 90 out of 100</li>
+                        </ul>
+                    </li>
+                    <li><h3>National Center for Assessment: Standardized Test of English Proficiency (STEP)</h3>
+                        <ul>
+                            <li>Total Score: 93 out of 100</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="skill-page page d-none">
+            
+            <div class="ar-page">
+                <h2>اللغات والمهارات</h2>
+                <hr>
+                <ul>
+                    <li><h3>اللغات</h3>
+                        <ul>
+                            <li>العربية: متقن</li>
+                            <li>الانجليزية: متقن</li>
+                        </ul>
+                    </li>
+                    <li><h3>المهارات</h3>
+                        <ul>
+                            <li>اتقان Excel</li>
+                            <li>اتقان Google Sheet</li>
+                            <li>تعلم ذاتي لأدوات التطوير والبرمجة
+                                <ul>
+                                    <li>git</li>
+                                    <li>HTML</li>
+                                    <li>CSS - SASS</li>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                    <li>Bootstrap</li>
+                                    <li>Linux OS</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="en-page">
+                <h2>Languages & Skills</h2>
+                <hr>
+                <ul>
+                    <li><h3>Languages</h3>
+                        <ul>
+                            <li>Arabic: Proficient</li>
+                            <li>English: Proficient</li>
+                        </ul>
+                    </li>
+                    <li><h3>Skills</h3>
+                        <ul>
+                            <li>Proficient with Excel</li>
+                            <li>Proficient with Google Sheet</li>
+                            <li>Self-taught in programming & developing
+                                <ul>
+                                    <li>git</li>
+                                    <li>HTML</li>
+                                    <li>CSS - SASS</li>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                    <li>Bootstrap</li>
+                                    <li>Linux OS</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
     </main>
 
     <footer>
 
         <div class="footer-ar">
-            <h2>للتواصل</h2>
+            <h2>للتواصل:</h2>
             <ul>
                 <li>البريد الالكتروني: <a href="mailto: osama.nhf@gmail.com">Osama.NHF@gmail.com</a></li>
-                <li>رقم الجوال: <a href="tel: +966537250424">0537250424</a></li>
+                <li>رقم الجوال: <a href="tel: +966537250424">+966537250424</a></li>
             </ul>
         </div>
 
         <div class="footer-en">
-            <h2>For Contant</h2>
+            <h2>Contact Info:</h2>
             <ul>
                 <li>Email: <a href="mailto: osama.nhf@gmail.com">Osama.NHF@gmail.com</a></li>
-                <li>Phone: <a href="tel: +966537250424">0537250424</a></li>
+                <li>Phone: <a href="tel: +966537250424">+966537250424</a></li>
             </ul>
         </div>
 
     </footer>
 
+    <script src="scripts/mainScript.js"></script>
 </body>
 </html>

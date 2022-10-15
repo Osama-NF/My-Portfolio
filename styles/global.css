@@ -1,0 +1,17 @@
+:root {
+    --main-color: rgb(65, 167, 192);
+    --bg-color: #ccc;
+    --btn-color: white;
+}
+
+html, * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    max-width: 100vw;
+}
