@@ -1,7 +1,8 @@
 header {
     padding: 10px;
     background-color: var(--main-color);
-    height: 15vh;
+    /* height: 15%; */
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;

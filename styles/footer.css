@@ -1,10 +1,11 @@
 footer {
     padding: 10px;
     background-color: var(--main-color);
-    height: 15vh;
+    /* height: 15%; */
     display: flex;
     justify-content: center;
     border-top: 1px solid black;
+    flex: 1;
 }
 
 footer li {

@@ -4,7 +4,8 @@
 ##############################################
 */
 main {
-    height: 70vh;
+    /* height: 70%; */
+    flex: 6;
     position: relative;
 }
 main > div {height: 100%;}
@@ -23,9 +24,10 @@ main > div {height: 100%;}
 }
 
 .nav-btn {
+    font-size: 0.9rem;
     border: 2px solid black;
     padding: 5px;
-    width: 15%;
+    width: 20%;
     height: 30%;
     margin: 0 10%;
     background-color: var(--btn-color);
