@@ -1,51 +1,61 @@
 /* ============== Mobile Devices ============= */
 @media (max-width: 480px) {
-    body {
-        background-color: red !important;
-        /* font-size: 0.8rem; */
-    }
-
 
     .nav-btn {
-        font-size: 0.8;
+        font-size: 1.1rem;
         width: 80%;
-        height: 20vh;
+        height: 15vh;
         margin: 20px 0;
     }
 
-    footer a {display: block;}
+    .page h1 {font-size: 1.5em;}
+    .page h3 {font-size: 1.3rem;}
+    .page {font-size: 1.2rem;}
+    .page li > ul,.page li > ol {margin: 3px 20px 20px;}
+
+    .header-btns > span:hover {
+        box-shadow: 0px 0px 0px  black;
+    }    
+
 }
 
 /* ============== Tablet Devices ============= */
 @media (min-width: 481px) and (max-width: 768px) {
-    body {
-        background-color: blue !important;
-        font-size: 0.8rem;
-    }
 
     .nav-btn {
         width: 80%;
-        height: 20%;
+        height: 15vh;
+        margin: 20px 0;
     }
 
-    footer a {display: block;}
+    .page h1 {font-size: 1.7em;}
+    .page h3 {font-size: 1.1em;}
+    .page {font-size: 1.4rem;}
+
+    .header-btns > span:hover {
+        box-shadow: 0px 0px 0px  black;
+    }    
     
 }
 
 /* ============== Laptop Devices ============= */
 @media (min-width: 769px) and (max-width: 1024px) {
-    body {
-        background-color: cyan !important;
-    }
+
     .nav-btn {
-        font-size: 0.8rem;
-        width: 25%;
+        font-size: 1.1rem;
+        width: 30%;
     }
+
+    .page {
+        font-size: 1.5rem;
+    }
+
 }
 
 /* ============== Desktop Devices ============= */
 @media (min-width: 1025px) and (max-width: 1200px) {
-    body {
-        background-color: green !important;
+    .nav-btn {
+        width: 25%;
     }
+
 }

@@ -1,0 +1,14 @@
+/* 
+##############################################
+################ Other Pages #################
+##############################################
+*/
+.page {
+    padding: 30px;
+    font-size: 1.6rem;
+}
+.page > h1 {text-align: center;}
+
+hr {margin: 10px 0;}
+
+.page li > ul,.page li > ol {margin: 3px 50px 20px;}

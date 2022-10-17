@@ -1,11 +1,46 @@
 header {
-    padding: 10px;
     background-color: var(--main-color);
-    /* height: 15%; */
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
     border-bottom: 1px solid black;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+}
+
+
+/* 
+#################################
+########### NAME Div ############
+#################################
+*/
+.name {
+    padding: 0 20px;
+    text-align: center;
+}
+
+
+/* 
+#################################
+######### Header Buttons ########
+#################################
+*/
+.header-btns {
+    height: 100%;
+    display: flex;
+}
+
+/* ================== Buttons =========================== */
+.header-btns > span {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 15px;
+    background-color: var(--main-color-hover);
+    border-right: 1px solid black;
+}.header-btns > span:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px  black;
 }
