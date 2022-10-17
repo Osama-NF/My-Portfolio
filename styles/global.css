@@ -1,8 +1,9 @@
 :root {
     --main-color: rgb(65, 167, 192);
     --main-color-hover: rgb(49, 125, 145);
-    --bg-color: #ccc;
+    --bg-color: #eee;
     --btn-color: white;
+    --list-bg-color: #ccc;
 }
 
 html, * {

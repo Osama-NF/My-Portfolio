@@ -8,10 +8,9 @@
         margin: 20px 0;
     }
 
-    .page h1 {font-size: 1.5em;}
-    .page h3 {font-size: 1.3rem;}
-    .page {font-size: 1.2rem;}
-    .page li > ul,.page li > ol {margin: 3px 20px 20px;}
+    .page h1 {font-size: 1.1em;}
+    .page h3 {font-size: 1.1rem;}
+    .page li > ul {font-size: .8em;}
 
     .header-btns > span:hover {
         box-shadow: 0px 0px 0px  black;

@@ -1,6 +1,6 @@
 /* 
 ##############################################
-################ Other Pages #################
+################# Top Part ###################
 ##############################################
 */
 .page {
@@ -9,6 +9,43 @@
 }
 .page > h1 {text-align: center;}
 
-hr {margin: 10px 0;}
+.page hr {margin: 10px 0;}
 
-.page li > ul,.page li > ol {margin: 3px 50px 20px;}
+
+
+/* 
+##############################################
+################## Listing ###################
+##############################################
+*/
+.page li {list-style: none;}
+
+
+/* Outer LIs */
+.page > ul > li {
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px black;
+    margin: 30px 0;
+    padding: 10px;
+}
+
+/* Inner ULs */
+.page li > ul {
+    background-color: var(--list-bg-color);
+    margin: 5px 10px;
+}
+
+/* Inner LIs */
+.page li > ul li {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* ================= Nested ULs =============== */
+/* Will code a dynamic coloring later */
+.page li > ul > li > ul {
+    background-color: var(--bg-color);
+}
+.page li > ul > li > ul > li > ul{
+    background-color: var(--list-bg-color);
+}
