@@ -1,60 +1,44 @@
-/* ============== Mobile Devices ============= */
-@media (max-width: 480px) {
-
-    .nav-btn {
-        font-size: 1.1rem;
-        width: 80%;
-        height: 15vh;
-        margin: 20px 0;
-    }
-
-    .page h1 {font-size: 1.1em;}
-    .page h3 {font-size: 1.1rem;}
-    .page li > ul {font-size: .8em;}
-
-    .header-btns > span:hover {
-        box-shadow: 0px 0px 0px  black;
-    }    
-
-}
 
 /* ============== Tablet Devices ============= */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) {
 
-    .nav-btn {
-        width: 80%;
-        height: 15vh;
-        margin: 20px 0;
-    }
-
-    .page h1 {font-size: 1.7em;}
+    .page h1 {font-size: 2.3rem;}
     .page h3 {font-size: 1.1em;}
-    .page {font-size: 1.4rem;}
-
-    .header-btns > span:hover {
-        box-shadow: 0px 0px 0px  black;
-    }    
+    .page li {font-size: 1.4rem;}
     
 }
 
 /* ============== Laptop Devices ============= */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) {
 
     .nav-btn {
-        font-size: 1.1rem;
-        width: 30%;
+        width: 40%;
     }
 
-    .page {
-        font-size: 1.5rem;
+    .header-btns > span:hover {
+        box-shadow: 0px 0px 5px  black;
     }
+
+    .page h1 {font-size: 3rem;}
+    .page li {font-size: 1.7rem;}
+    
+    .page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page hr {width: 70%;}
 
 }
 
-/* ============== Desktop Devices ============= */
-@media (min-width: 1025px) and (max-width: 1200px) {
+/* ============== Small Screens Desktops ============= */
+@media (min-width: 1025px) {
+    
     .nav-btn {
+        font-size: 1.4rem;
         width: 25%;
+        height: 25%;
+        margin: 0 10%;
     }
-
+    
 }

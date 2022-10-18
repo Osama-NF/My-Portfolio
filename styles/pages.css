@@ -5,10 +5,11 @@
 */
 .page {
     padding: 30px;
-    font-size: 1.6rem;
 }
-.page > h1 {text-align: center;}
-
+.page h1 {
+    font-size: 1.75em;
+    text-align: center;
+}
 .page hr {margin: 10px 0;}
 
 
@@ -18,7 +19,11 @@
 ################## Listing ###################
 ##############################################
 */
-.page li {list-style: none;}
+.page h3 {font-size: 1.1rem;}
+.page li {
+    font-size: 1.25rem;
+    list-style: none;
+}
 
 
 /* Outer LIs */
@@ -43,9 +48,5 @@
 
 /* ================= Nested ULs =============== */
 /* Will code a dynamic coloring later */
-.page li > ul > li > ul {
-    background-color: var(--bg-color);
-}
-.page li > ul > li > ul > li > ul{
-    background-color: var(--list-bg-color);
-}
+.page li > ul > li > ul {background-color: var(--bg-color);}
+.page li > ul > li > ul > li > ul{background-color: var(--list-bg-color);}

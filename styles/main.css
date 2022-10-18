@@ -23,12 +23,12 @@ main > div {height: 100%;}
 }
 
 .nav-btn {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    width: 80%;
+    height: 15vh;
+    margin: 20px 0;
     border: 2px solid black;
     padding: 5px;
-    width: 20%;
-    height: 25%;
-    margin: 0 10%;
     background-color: var(--btn-color);
     box-shadow: 1px 1px 5px  black;
     display: flex;
