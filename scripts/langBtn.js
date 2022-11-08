@@ -9,30 +9,16 @@ langBtn.addEventListener('click', () => {
         $('html').attr('lang', 'en')
         $('html').attr('dir', 'ltr')
 
-        let arabicElements = Array.from($('.ar-display')); 
-        arabicElements.forEach(element => {
-            element.classList.add('d-none')
-        });
-
-        let englishElements = Array.from($('.en-display')); 
-        englishElements.forEach(element => {
-            element.classList.remove('d-none')
-        });
+        $('.ar-display').hide()
+        $('.en-display').show()
 
     } else {
 
         $('html').attr('lang', 'ar')
         $('html').attr('dir', 'rtl')
 
-        let englishElements = Array.from($('.en-display')); 
-        englishElements.forEach(element => {
-            element.classList.add('d-none')
-        });
-
-        let arabicElements = Array.from($('.ar-display')); 
-        arabicElements.forEach(element => {
-            element.classList.remove('d-none')
-        });
+        $('.ar-display').show()
+        $('.en-display').hide()
 
     }
 

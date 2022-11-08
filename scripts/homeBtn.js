@@ -1,8 +1,8 @@
 $('.home-btn')[0].addEventListener('click', () => {
     
-    $('.home-btn').addClass('d-none')
-    $('.page').addClass('d-none')
+    $('.home-btn').fadeOut()
+    $('.page').hide()
+    $('.nav-page').slideDown()
     $('.page').empty()
-    $('.nav-page').removeClass('d-none')
 
 })

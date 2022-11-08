@@ -10,8 +10,8 @@ Array.from(navBtns).forEach(btn => {
         $('main').attr('data-current-page', page)
         $('.page').load(`../pages/${lang}-${page}.html`)
 
-        $('.nav-page').addClass('d-none')
-        $('.page').removeClass('d-none')
-        $('.home-btn').removeClass('d-none')
+        $('.nav-page').slideUp()
+        $('.page').show()
+        $('.home-btn').fadeIn()
     })
 })
