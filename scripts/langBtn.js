@@ -3,26 +3,30 @@ const langBtn = $('.lang-btn')[0]
 langBtn.addEventListener('click', () => {
 
     let lang = $('html').attr('lang');
+    $('.page').fadeOut()
 
     if (lang == 'ar') {
 
-        $('html').attr('lang', 'en')
-        $('html').attr('dir', 'ltr')
-
-        $('.ar-display').hide()
-        $('.en-display').show()
+        
+        $('.ar-display').fadeOut('default',()=>{
+            $('html').attr('lang', 'en')
+            $('html').attr('dir', 'ltr')
+            switchContent(lang)
+            $('.en-display').fadeIn()
+        })
 
     } else {
 
-        $('html').attr('lang', 'ar')
-        $('html').attr('dir', 'rtl')
-
-        $('.ar-display').show()
-        $('.en-display').hide()
+        
+        $('.en-display').fadeOut('default', () => {
+            $('html').attr('lang', 'ar')
+            $('html').attr('dir', 'rtl')
+            switchContent(lang)
+            $('.ar-display').fadeIn()
+        })
 
     }
 
-    switchContent(lang)
 
 })
 
@@ -42,7 +46,7 @@ function switchContent(lang) {
     }
 
     let href = `../pages/${lang}-${currentPage}.html`
-    $('.page').load(href)
+    $('.page').empty().load(href).fadeIn('slow')
 }
 
 // should also keep the change in local memory
