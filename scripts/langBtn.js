@@ -3,40 +3,30 @@ const langBtn = $('.lang-btn')[0]
 langBtn.addEventListener('click', () => {
 
     let lang = $('html').attr('lang');
+    $('.page').fadeOut()
 
     if (lang == 'ar') {
 
-        $('html').attr('lang', 'en')
-        $('html').attr('dir', 'ltr')
-
-        let arabicElements = Array.from($('.ar-display')); 
-        arabicElements.forEach(element => {
-            element.classList.add('d-none')
-        });
-
-        let englishElements = Array.from($('.en-display')); 
-        englishElements.forEach(element => {
-            element.classList.remove('d-none')
-        });
+        
+        $('.ar-display').fadeOut('default',()=>{
+            $('html').attr('lang', 'en')
+            $('html').attr('dir', 'ltr')
+            switchContent(lang)
+            $('.en-display').fadeIn()
+        })
 
     } else {
 
-        $('html').attr('lang', 'ar')
-        $('html').attr('dir', 'rtl')
-
-        let englishElements = Array.from($('.en-display')); 
-        englishElements.forEach(element => {
-            element.classList.add('d-none')
-        });
-
-        let arabicElements = Array.from($('.ar-display')); 
-        arabicElements.forEach(element => {
-            element.classList.remove('d-none')
-        });
+        
+        $('.en-display').fadeOut('default', () => {
+            $('html').attr('lang', 'ar')
+            $('html').attr('dir', 'rtl')
+            switchContent(lang)
+            $('.ar-display').fadeIn()
+        })
 
     }
 
-    switchContent(lang)
 
 })
 
@@ -56,7 +46,7 @@ function switchContent(lang) {
     }
 
     let href = `../pages/${lang}-${currentPage}.html`
-    $('.page').load(href)
+    $('.page').empty().load(href).fadeIn('slow')
 }
 
 // should also keep the change in local memory

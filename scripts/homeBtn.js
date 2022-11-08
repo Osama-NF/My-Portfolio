@@ -1,8 +1,13 @@
 $('.home-btn')[0].addEventListener('click', () => {
     
-    $('.home-btn').addClass('d-none')
-    $('.page').addClass('d-none')
-    $('.page').empty()
-    $('.nav-page').removeClass('d-none')
+    $('.home-btn').fadeOut()
+    $('main').attr('data-current-page', 'nav-page')
+    
+    $('.page').slideUp('default', () => {
+        
+        $('.page').empty()
+        $('.nav-page').slideDown()
+    
+    })
 
 })

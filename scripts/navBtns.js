@@ -8,10 +8,11 @@ Array.from(navBtns).forEach(btn => {
         if (!page) page = e.target.parentElement.getAttribute('data-page')
         
         $('main').attr('data-current-page', page)
-        $('.page').load(`../pages/${lang}-${page}.html`)
+        $('.page').load(`../pages/${lang}-${page}.html`).promise().done(()=>{
+            $('.page').fadeIn(1000)
+        });
 
-        $('.nav-page').addClass('d-none')
-        $('.page').removeClass('d-none')
-        $('.home-btn').removeClass('d-none')
+        $('.nav-page').slideUp()
+        $('.home-btn').fadeIn()
     })
 })
