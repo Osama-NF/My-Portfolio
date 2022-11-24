@@ -4,7 +4,7 @@
 ##############################################
 */
 main {
-    flex: 10;
+    flex: 13;
     position: relative;
 }
 main > div {height: 100%;}
@@ -18,19 +18,18 @@ main > div {height: 100%;}
 .nav-page {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .nav-btn {
     font-size: 1.1rem;
     width: 80%;
-    height: 15vh;
-    margin: 20px 0;
-    border: 2px solid black;
-    padding: 5px;
-    background-color: var(--btn-color);
-    box-shadow: 1px 1px 5px  black;
+    padding: 10px;
+    border: 2px solid var(--main-border);
+    background-color: var(--main-btn-color);
+    color: var(--main-btn-color-text);
+    box-shadow: 1px 1px 5px  var(--main-btn-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,5 +39,5 @@ main > div {height: 100%;}
     user-select: none;
 }.nav-btn:hover {
     cursor: pointer;
-    box-shadow: 1px 1px 15px  black;
+    box-shadow: 1px 1px 15px  var(--main-btn-color);
 }

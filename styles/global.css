@@ -1,9 +1,22 @@
 :root {
-    --main-color: rgb(65, 167, 192);
-    --main-color-hover: rgb(49, 125, 145);
-    --bg-color: #eee;
-    --btn-color: white;
-    --list-bg-color: #ccc;
+    /* Header */
+    --header-color: #553d67;
+    --header-color-text: #eee;
+    --header-btn-color: #553d67;
+    --header-btn-color-text: #eee;
+    --header-border: #f64c72;
+    
+    /* Main */
+    --main-color: white;
+    --main-color-text: black;
+    --main-btn-color: white;
+    --main-btn-color-text: black;
+    --main-border: black;
+    
+    /* Pages */
+    --pages-color: #99738e;
+    --pages-color-text: #eee;
+    --pages-border: black;
 }
 
 html, * {
@@ -13,8 +26,23 @@ html, * {
 }
 
 body {
-    background-color: var(--bg-color);
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
+body.light-theme {
+    background-color: var(--main-color);
+    color: var(--main-color-text);
+}
+body.dark-theme {
+    background-color: var(--main-color);
+    color: var(--main-color-text);
+}
+
+/* For Dark Mode ?
+#242582      -- darker blue
+#2f2fa2      -- lighter blue
+#f64c72      -- red orange thing
+#553d67      -- darker brown
+#99738e      -- lighter brown
+*/
