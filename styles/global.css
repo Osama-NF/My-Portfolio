@@ -1,22 +1,29 @@
 :root {
     /* Header */
-    --header-color: #553d67;
-    --header-color-text: #eee;
-    --header-btn-color: #553d67;
-    --header-btn-color-text: #eee;
-    --header-border: #f64c72;
-    
+    --header-bg: #242582;
+    --header-text: #eee;
+
     /* Main */
-    --main-color: white;
-    --main-color-text: black;
-    --main-btn-color: white;
-    --main-btn-color-text: black;
-    --main-border: black;
+    --main-bg: #2f2fa2;
+    --main-text: #eee;
+    
+    /* Buttons */
+    --btn-bg: #99738e;
+    --btn-text: #000;
+    --btn-border: #2f2fa2;
+    --btn-shadow: #000;
+    
     
     /* Pages */
-    --pages-color: #99738e;
-    --pages-color-text: #eee;
-    --pages-border: black;
+    --pages-border: #000;
+    --pages-shadow: #000;
+    
+    --inner-bg: #553d67;
+    --inner-text: #eee;
+
+    --outer-bg: #99738e;
+    --outer-text: #000;
+
 }
 
 html, * {
@@ -26,23 +33,25 @@ html, * {
 }
 
 body {
+    background-color: var(--main-bg);
+    color: var(--main-text);
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
-body.light-theme {
-    background-color: var(--main-color);
-    color: var(--main-color-text);
-}
-body.dark-theme {
-    background-color: var(--main-color);
-    color: var(--main-color-text);
-}
 
-/* For Dark Mode ?
+/* Theme 1 (darkish)
 #242582      -- darker blue
 #2f2fa2      -- lighter blue
 #f64c72      -- red orange thing
 #553d67      -- darker brown
 #99738e      -- lighter brown
+*/
+
+/* Theme 2 (lightish)
+#8d8741
+#659dbd
+#daad86
+#bc986a
+#fbeec1
 */

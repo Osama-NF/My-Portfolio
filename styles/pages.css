@@ -29,14 +29,17 @@
 /* Outer LIs */
 .page > ul > li {
     border: 1px solid var(--pages-border);
-    box-shadow: 0px 0px 5px var(--pages-border);
+    box-shadow: 0px 0px 5px var(--pages-shadow);
+    background-color: var(--outer-bg);
+    color: var(--outer-text);
     margin: 30px 0;
     padding: 10px;
 }
 
 /* Inner ULs */
 .page li > ul {
-    background-color: var(--pages-color);
+    background-color: var(--inner-bg);
+    color: var(--inner-text);
     margin: 5px 10px;
 }
 
@@ -48,5 +51,5 @@
 
 /* ================= Nested ULs =============== */
 /* Will code a dynamic coloring later */
-.page li > ul > li > ul {background-color: var(--main-color);}
-.page li > ul > li > ul > li > ul{background-color: var(--pages-color);}
+.page li > ul > li > ul {background-color: var(--outer-bg); color: var(--outer-text);}
+.page li > ul > li > ul > li > ul{background-color: var(--inner-bg); color: var(--inner-text);}
