@@ -1,16 +1,16 @@
 :root {
     /* Header */
-    --header-bg: #242582;
-    --header-text: #eee;
+    --header-bg: #659dbd;
+    --header-text: #000;
 
     /* Main */
-    --main-bg: #2f2fa2;
-    --main-text: #eee;
+    --main-bg: #daad86;
+    --main-text: #000;
     
     /* Buttons */
-    --btn-bg: #99738e;
+    --btn-bg: #bc986a;
     --btn-text: #000;
-    --btn-border: #2f2fa2;
+    --btn-border: #000;
     --btn-shadow: #000;
     
     
@@ -18,10 +18,10 @@
     --pages-border: #000;
     --pages-shadow: #000;
     
-    --inner-bg: #553d67;
-    --inner-text: #eee;
+    --inner-bg: #daad86;
+    --inner-text: #000;
 
-    --outer-bg: #99738e;
+    --outer-bg: #bc986a;
     --outer-text: #000;
 
 }
