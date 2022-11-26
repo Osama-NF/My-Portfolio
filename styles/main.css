@@ -17,11 +17,56 @@ main > div {height: 100%;}
 */
 .nav-page {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-lg {
+    display: none;
+    position: relative;
+    flex-grow: 4;
+    height: 100%;
+    background-image: url('../img/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    box-shadow: inset 0px 0px 15px 35px black;
+}
+.nav-lg > .card {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    position: absolute;
+    top: 25%;
+    padding: 15px;
+    width: 25%;
+    border-radius: 15px;
+    border: 2px solid var(--btn-border);
+    box-shadow: inset 0 0 5px var(--btn-border);
+}
+.nav-lg h1 {
+    border-bottom: 3px solid var(--btn-border);
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.nav-lg .card.ar-display {left: 12%;}
+.nav-lg .card.en-display {right: 12%;}
+.nav-lg .card.ar-display h1 {border-right: 3px solid var(--btn-border);}
+.nav-lg .card.en-display h1 {border-left: 3px solid var(--btn-border);}
+
+/* 
+##############################################
+################## NAV Btns ##################
+##############################################
+*/
+.nav-btns {
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
 }
-
 .nav-btn {
     font-size: 1.1rem;
     width: 80%;

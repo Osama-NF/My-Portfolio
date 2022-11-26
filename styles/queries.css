@@ -4,28 +4,19 @@
 
     .page h1 {font-size: 2.3rem;}
     .page h3 {font-size: 1.1em;}
-    .page li {font-size: 1.4rem;}
+    .page li {font-size: 1.3rem;}
     
 }
 
 /* ============== Laptop Devices ============= */
 @media (min-width: 769px) {
 
-    .nav-btn {
-        width: 40%;
-    }
-
-    .nav-page {
-        align-items: flex-end;
-        margin: 0 30px;
-    }
-
     .header-btns > span:hover {
         box-shadow: 0px 0px 5px  black;
     }
 
-    .page h1 {font-size: 3rem;}
-    .page li {font-size: 1.7rem;}
+    .page h1 {font-size: 2.5rem;}
+    .page li {font-size: 1.4rem;}
     
     .page {
         display: flex;
@@ -39,10 +30,16 @@
 /* ============== Small Screens Desktops ============= */
 @media (min-width: 1025px) {
     
+    .nav-lg {
+        display: block;
+    }
+
     .nav-btn {
-        font-size: 1.1rem;
-        width: 25%;
-        height: 10%;
+        font-size: 1.2rem;
+    }
+
+    .name > h1 {
+        font-size: 1.8rem;
     }
     
 }
