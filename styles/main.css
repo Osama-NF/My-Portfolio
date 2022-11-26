@@ -31,13 +31,17 @@ main > div {height: 100%;}
     color: var(--btn-text);
     box-shadow: 1px 1px 5px  var(--btn-shadow);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
     border-radius: 15px;
     user-select: none;
 }.nav-btn:hover {
     cursor: pointer;
     box-shadow: 1px 1px 15px  var(--btn-shadow);
+}
+
+.nav-icon {
+    width: 30px;
 }

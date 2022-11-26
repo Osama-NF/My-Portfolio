@@ -1,3 +1,4 @@
+/* Leave this as a fallback root variables, in case js file didn't work */
 :root {
     /* Header */
     --header-bg: #659dbd;
@@ -33,6 +34,7 @@ html, * {
 }
 
 body {
+    font-family: arial, verdana tahoma, "trebuchet MS", "times new roman", georgia garamond, 'Courier New', "brush script MT", 'amiri';
     background-color: var(--main-bg);
     color: var(--main-text);
     height: 100vh;

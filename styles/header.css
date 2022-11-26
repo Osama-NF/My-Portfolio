@@ -17,11 +17,13 @@ header {
 #################################
 */
 .name {
-    padding: 0 20px;
+    padding: 0 10px;
     text-align: center;
 }
 .name > h1 {
-    font-size: 1.40rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    user-select: none;
 }
 
 /* 
@@ -43,6 +45,7 @@ header {
     background-color: var(--btn-bg);
     color: var(--btn-text);
     border: 1px solid var(--btn-border);
+    box-shadow: 0 0 5px var(--btn-shadow);
     cursor: pointer;
     margin: 0 5px;
     border-radius: 12%;
