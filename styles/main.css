@@ -1,44 +1,8 @@
-/* 
-##############################################
-#################### MAIN ####################
-##############################################
-*/
 main {
-    flex: 10;
+    flex: 13;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 main > div {height: 100%;}
-.d-none {display: none !important;}
-
-/* 
-##############################################
-################## NAV Page ##################
-##############################################
-*/
-.nav-page {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.nav-btn {
-    font-size: 1.1rem;
-    width: 80%;
-    height: 15vh;
-    margin: 20px 0;
-    border: 2px solid black;
-    padding: 5px;
-    background-color: var(--btn-color);
-    box-shadow: 1px 1px 5px  black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    border-radius: 15px;
-    user-select: none;
-}.nav-btn:hover {
-    cursor: pointer;
-    box-shadow: 1px 1px 15px  black;
-}

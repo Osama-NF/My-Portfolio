@@ -1,18 +1,30 @@
-const navBtns = $('.nav-btn')
+$('.nav-btn').each(function(){
+    this.addEventListener('click', loadPage)
+})
+    
 
-Array.from(navBtns).forEach(btn => {
-    btn.addEventListener('click', e => {
+function loadPage(e) {
+
+    // for phone users: hide the nav buttons, and show the page
+    if ($(window).width() < 769) {
+        $('.nav-btns').slideUp('fast', function(){
+            $('.page').slideDown()
+        })
+    }
+    
+    // get the needed page refrence
+    let lang = $('html').attr('lang')
+    let page = e.target.getAttribute('data-page')
+    if (!page) page = e.target.parentElement.getAttribute('data-page')
+    let href = `../pages/${lang}-${page}.html`
+    
+    // make sure the container & intro are hidden, or hide it if it was shown
+    $('.intro').hide()
+    $('.container').slideUp('slow', function() {
         
-        let lang = $('html').attr('lang')
-        let page = e.target.getAttribute('data-page')
-        if (!page) page = e.target.parentElement.getAttribute('data-page')
-        
+        // changing the current page & showing the home button
         $('main').attr('data-current-page', page)
-        $('.page').load(`../pages/${lang}-${page}.html`).promise().done(()=>{
-            $('.page').fadeIn(1000)
-        });
-
-        $('.nav-page').slideUp()
+        $('.container').empty().load(href).fadeIn()
         $('.home-btn').fadeIn()
     })
-})
+}

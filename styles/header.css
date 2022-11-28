@@ -1,10 +1,10 @@
 header {
-    background-color: var(--main-color);
+    background-color: var(--header-bg);
+    color: var(--header-text);
     flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
     position: sticky;
     top: 0px;
     z-index: 99;
@@ -17,10 +17,14 @@ header {
 #################################
 */
 .name {
-    padding: 0 20px;
+    padding: 0 10px;
     text-align: center;
 }
-
+.name > h1 {
+    font-size: 1.25rem;
+    cursor: pointer;
+    user-select: none;
+}
 
 /* 
 #################################
@@ -28,7 +32,7 @@ header {
 #################################
 */
 .header-btns {
-    height: 100%;
+    height: 50%;
     display: flex;
 }
 
@@ -38,7 +42,11 @@ header {
     align-items: center;
     font-size: 20px;
     padding: 15px;
-    background-color: var(--main-color-hover);
-    border-right: 1px solid black;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: 1px solid var(--btn-border);
+    box-shadow: 0 0 5px var(--btn-shadow);
     cursor: pointer;
+    margin: 0 5px;
+    border-radius: 12%;
 }

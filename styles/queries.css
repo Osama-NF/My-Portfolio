@@ -4,30 +4,37 @@
 
     .page h1 {font-size: 2.3rem;}
     .page h3 {font-size: 1.1em;}
-    .page li {font-size: 1.4rem;}
+    .page li {font-size: 1.3rem;}
     
 }
 
 /* ============== Laptop Devices ============= */
 @media (min-width: 769px) {
 
-    .nav-btn {
-        width: 40%;
-    }
-
     .header-btns > span:hover {
         box-shadow: 0px 0px 5px  black;
     }
 
-    .page h1 {font-size: 3rem;}
-    .page li {font-size: 1.7rem;}
+    .nav-btns{
+        width: 25%;
+    }
+
+    .page h1 {font-size: 2.5rem;}
+    .page li {font-size: 1.4rem;}
     
     .page {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 75%;
+        box-shadow: 0 0 10px 5px var(--pages-shadow);
+        overflow-x: hidden;
     }
     .page hr {width: 70%;}
+
+    .page .intro {
+        display: block;
+    }
 
 }
 
@@ -35,10 +42,11 @@
 @media (min-width: 1025px) {
     
     .nav-btn {
-        font-size: 1.4rem;
-        width: 25%;
-        height: 25%;
-        margin: 0 10%;
+        font-size: 1.2rem;
+    }
+
+    .name > h1 {
+        font-size: 1.8rem;
     }
     
 }

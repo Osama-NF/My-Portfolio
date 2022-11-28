@@ -1,9 +1,30 @@
+/* Leave this as a fallback root variables, in case js file didn't work */
 :root {
-    --main-color: rgb(65, 167, 192);
-    --main-color-hover: rgb(49, 125, 145);
-    --bg-color: #eee;
-    --btn-color: white;
-    --list-bg-color: #ccc;
+    /* Header */
+    --header-bg: #659dbd;
+    --header-text: #000;
+
+    /* Main */
+    --main-bg: #daad86;
+    --main-text: #000;
+    
+    /* Buttons */
+    --btn-bg: #bc986a;
+    --btn-text: #000;
+    --btn-border: #000;
+    --btn-shadow: #000;
+    
+    
+    /* Pages */
+    --pages-border: #000;
+    --pages-shadow: #000;
+    
+    --inner-bg: #daad86;
+    --inner-text: #000;
+
+    --outer-bg: #bc986a;
+    --outer-text: #000;
+
 }
 
 html, * {
@@ -13,8 +34,26 @@ html, * {
 }
 
 body {
-    background-color: var(--bg-color);
+    font-family: arial, verdana tahoma, "trebuchet MS", "times new roman", georgia garamond, 'Courier New', "brush script MT", 'amiri';
+    background-color: var(--main-bg);
+    color: var(--main-text);
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
+/* Theme 1 (darkish)
+#242582      -- darker blue
+#2f2fa2      -- lighter blue
+#f64c72      -- red orange thing
+#553d67      -- darker brown
+#99738e      -- lighter brown
+*/
+
+/* Theme 2 (lightish)
+#8d8741
+#659dbd
+#daad86
+#bc986a
+#fbeec1
+*/
