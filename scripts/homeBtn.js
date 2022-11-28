@@ -12,6 +12,8 @@ function returnHome() {
         $('.container').empty()
         $('.nav-btns').slideDown()
         $('.intro').show()
+
+        // for phone screens, hide the page
         if ($(window).width() <= 769) {
             $('.page').hide()
         }

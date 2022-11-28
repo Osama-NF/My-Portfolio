@@ -3,8 +3,21 @@
 ################# Intro ###################
 ##############################################
 */
-.intro {
-    display: none;
+.intro {display: none;}
+.intro div {
+    background: var(--header-bg);
+    border: 2px solid var(--btn-bg);
+    position: absolute;
+    width: 40%;
+    border-radius: 15px;
+    padding: 15px;
+    top: 15%;
+    left: 32%;
+}
+.intro h1 {
+    border-bottom: 3px solid var(--btn-bg);
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 /* 
