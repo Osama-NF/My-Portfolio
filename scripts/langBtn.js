@@ -3,7 +3,7 @@ const langBtn = $('.lang-btn')[0]
 langBtn.addEventListener('click', () => {
 
     let lang = $('html').attr('lang');
-    $('.page').fadeOut()
+    $('.container').fadeOut()
 
     if (lang == 'ar') {
 
@@ -46,7 +46,7 @@ function switchContent(lang) {
     }
 
     let href = `../pages/${lang}-${currentPage}.html`
-    $('.page').empty().load(href).fadeIn('slow')
+    $('.container').empty().load(href).fadeIn('slow')
 }
 
 // should also keep the change in local memory

@@ -6,8 +6,9 @@
     <script src="scripts/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/global.css">
     <link rel="stylesheet" type="text/css" href="styles/header.css">
-    <link rel="stylesheet" type="text/css" href="styles/pages.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/pages.css">
+    <link rel="stylesheet" type="text/css" href="styles/nav.css">
     <link rel="stylesheet" type="text/css" href="styles/queries.css">
     <script src="scripts/themes.js"></script>
     <title>Osama Alfahad | أسامة الفهد</title>
@@ -47,72 +48,75 @@
                 </svg>
             </span>
 
-
         </div>
 
     </header>
 
     <main data-current-page="nav-page">
 
-        <!-- NAV Page -->
+        <div class="nav-btns">
+            <div class="nav-btn" data-page="work-page">
+                <h3 class="ar-display">خبرات العمل</h3>
+                <h3 class="en-display" style="display: none;">Work Experience</h3>
+                <img src="img/icons8-business-time-30.png" class="nav-icon">
+            </div>
 
-        <div class="nav-page">
+            <div class="nav-btn" data-page="edu-page">
+                <h3 class="ar-display">التعليم والشهادات</h3>
+                <h3 class="en-display" style="display: none;">Education & Certificates</h3>
+                <img src="img/icons8-graduation-cap-30.png" class="nav-icon">
+            </div>
 
-            <div class="nav-btns">
-                <div class="nav-btn" data-page="work-page">
-                    <h3 class="ar-display">خبرات العمل</h3>
-                    <h3 class="en-display" style="display: none;">Work Experience</h3>
-                    <img src="img/icons8-business-time-30.png" class="nav-icon">
+            <div class="nav-btn" data-page="qual-page">
+                <h3 class="ar-display">المؤهلات الاخرى</h3>
+                <h3 class="en-display" style="display: none;">Other Qualifications</h3>
+                <img src="img/icons8-diploma-48.png" class="nav-icon">
+            </div>
+
+            <div class="nav-btn" data-page="skill-page">
+                <h3 class="ar-display">اللغات والمهارات</h3>
+                <h3 class="en-display" style="display: none;">Languages & Skills</h3>
+                <img src="img//icons8-language-50.png" class="nav-icon">
+            </div>
+            
+            <div class="nav-btn" data-page="contact-page">
+                <h3 class="ar-display">معلومات التواصل</h3>
+                <h3 class="en-display" style="display: none;">Contact Information</h3>
+                <img src="img/icons8-telephone-64.png" class="nav-icon">
+            </div>
+        </div>
+
+        <div class="page">
+
+            <div class="intro">
+                <div class="ar-display">
+                    <h1>أسامة الفهد</h1>
+                    <p>
+                        تذكّر أنّ البذرة الصغيرة تعلم أنّها لكي تكبر يجب أن تدفن في الوحل فتتغطى بأكملها في ظلام لتكافح حتى تصل إلى الضوء.
+                        لا أحد يمتلك حياة وردية ولا قلباً خالياً ولا رأساً خفيفاً من الأعباء ولكن هناك من يدعو الله ويبتسم... الحمد لله دائماً وأبداً.
+                    </p>
                 </div>
-    
-                <div class="nav-btn" data-page="edu-page">
-                    <h3 class="ar-display">التعليم والشهادات</h3>
-                    <h3 class="en-display" style="display: none;">Education & Certificates</h3>
-                    <img src="img/icons8-graduation-cap-30.png" class="nav-icon">
-                </div>
-    
-                <div class="nav-btn" data-page="qual-page">
-                    <h3 class="ar-display">المؤهلات الاخرى</h3>
-                    <h3 class="en-display" style="display: none;">Other Qualifications</h3>
-                    <img src="img/icons8-diploma-48.png" class="nav-icon">
-                </div>
-    
-                <div class="nav-btn" data-page="skill-page">
-                    <h3 class="ar-display">اللغات والمهارات</h3>
-                    <h3 class="en-display" style="display: none;">Languages & Skills</h3>
-                    <img src="img//icons8-language-50.png" class="nav-icon">
-                </div>
-                
-                <div class="nav-btn" data-page="contact-page">
-                    <h3 class="ar-display">معلومات التواصل</h3>
-                    <h3 class="en-display" style="display: none;">Contact Information</h3>
-                    <img src="img/icons8-telephone-64.png" class="nav-icon">
+                <div class="en-display" style="display: none;">
+                    <h1>Osama Alfahad</h1>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ipsam nobis voluptatibus accusamus, 
+                        quas vero voluptatum iure! Maxime, necessitatibus natus! 
+                        Ipsum fugit atque iste dignissimos blanditiis laudantium quibusdam nostrum dolor vel!
+                    </p>
                 </div>
             </div>
 
-            <div class="nav-lg">
-                
-                <div class="card ar-display">
-                    <h1>أسامة الفهد</h1>
-                    <b style="font-size: 1.2rem;">مطور ويب</b>
-                </div>
-
-                <div class="card en-display" style="display: none;">
-                    <h1>Osama Alfahad</h1>
-                    <b>Web developer</b>
-                </div>
+            <div class="container" style="display: none;">
 
             </div>
 
         </div>
 
-        <!-- Other Pages -->
-
-        <div class="page" style="display: none;"></div>
-
     </main>
+    <script src="scripts/homeBtn.js"></script>
+    <script src="scripts/resize.js"></script>
     <script src="scripts/navBtns.js"></script>
     <script src="scripts/langBtn.js"></script>
-    <script src="scripts/homeBtn.js"></script>
 </body>
 </html>

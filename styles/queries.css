@@ -15,6 +15,10 @@
         box-shadow: 0px 0px 5px  black;
     }
 
+    .nav-btns{
+        width: 25%;
+    }
+
     .page h1 {font-size: 2.5rem;}
     .page li {font-size: 1.4rem;}
     
@@ -22,18 +26,21 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 75%;
+        box-shadow: 0 0 10px 5px var(--pages-shadow);
+        overflow-x: hidden;
     }
     .page hr {width: 70%;}
+
+    .page .intro {
+        display: block;
+    }
 
 }
 
 /* ============== Small Screens Desktops ============= */
 @media (min-width: 1025px) {
     
-    .nav-lg {
-        display: block;
-    }
-
     .nav-btn {
         font-size: 1.2rem;
     }

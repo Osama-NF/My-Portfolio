@@ -1,10 +1,25 @@
 /* 
 ##############################################
+################# Intro ###################
+##############################################
+*/
+.intro {
+    display: none;
+}
+
+/* 
+##############################################
 ################# Top Part ###################
 ##############################################
 */
 .page {
     padding: 30px;
+    background-color: var(--main-bg);
+    height: 100%;
+    display: none;
+    position: relative;
+    width: 100%;
+    background-color: var(--main-bg);
 }
 .page h1 {
     font-size: 1.75em;
@@ -27,7 +42,7 @@
 
 
 /* Outer LIs */
-.page > ul > li {
+.page .container > ul > li {
     border: 1px solid var(--pages-border);
     box-shadow: 0px 0px 3px var(--pages-shadow);
     background-color: var(--outer-bg);

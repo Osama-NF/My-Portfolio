@@ -1,3 +1,8 @@
+/*
+    1- All the themes are in the below array, and it's the only place you need to edit for themes
+    2- All themes should have the exact same key structure and naming, the only difference is the string
+    3- You can have as many themes as you want, but you should (delete?) the toggleIcon() fucntion, as it's only good for 2 themes
+*/
 const THEMES = [
     lightTheme = {
         header: {
@@ -61,7 +66,7 @@ const THEMES = [
 
 ]
 
-$('document').ready(function() {
+$(function() {
 
     changeTheme(THEMES[0])
 
