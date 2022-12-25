@@ -42,18 +42,13 @@ body {
     flex-direction: column;
 }
 
-/* Theme 1 (darkish)
-#242582      -- darker blue
-#2f2fa2      -- lighter blue
-#f64c72      -- red orange thing
-#553d67      -- darker brown
-#99738e      -- lighter brown
+/* 
+#######################################
+############## Classes ################
+#######################################
 */
 
-/* Theme 2 (lightish)
-#8d8741
-#659dbd
-#daad86
-#bc986a
-#fbeec1
-*/
+.eng-content {
+    direction: ltr;
+    text-align: left;
+}
