@@ -35,24 +35,24 @@ const THEMES = [
     
     darkTheme = {
         header: {
-            bg: "#242582",
+            bg: "#361e1e",
             text: "#eee"
         },
         main: {
-            bg: "#2e0c52",
+            bg: "#201811",
             text: "#eee"
         },
         btn: {
             bg: "#99738e",
             text: "#000",
-            border: "#f64c72",
-            shadow: "#f64c72"
+            border: "#4a4749",
+            shadow: "#ffb6c6"
         },
         pages: {
             border: "#000",
-            shadow: "#f64c72",
+            shadow: "#361e1e",
             inner: {
-                bg: "#553d67",
+                bg: "#361e1e",
                 text: "#eee"
             },
             outer: {
