@@ -60,7 +60,7 @@
 
 /* Outer LIs */
 .page .container > ul > li {
-    border: 1px solid var(--pages-border);
+    /* border: 1px solid var(--pages-border); */
     box-shadow: 0px 0px 3px var(--pages-shadow);
     background-color: var(--outer-bg);
     color: var(--outer-text);
@@ -70,22 +70,38 @@
 
 /* Inner ULs */
 .page li > ul {
+    margin: 5px 10px;
     background-color: var(--inner-bg);
     color: var(--inner-text);
-    margin: 5px 10px;
 }
 
 /* Inner LIs */
 .page li > ul li {
-    border: 1px solid var(--pages-border);
+    border-bottom: 1px solid;
     padding: 5px;
+    margin-bottom: 5px;
 }
 
-/* ================= Nested ULs =============== */
+/* ================= Nested ULs & Lis (not dynamic) =============== */
 /* Will code a dynamic coloring later */
 .page li > ul > li > ul {background-color: var(--outer-bg); color: var(--outer-text);}
 .page li > ul > li > ul > li > ul{background-color: var(--inner-bg); color: var(--inner-text);}
 
+
+
+/* 
+##############################################
+################### Tables ####################
+##############################################
+*/
+#skill-table img {
+    width: 24px;
+    margin: 0 10px;
+}
+#skill-table td {
+    padding: 10px;
+    display: flex;
+}
 
 /* 
 ##############################################

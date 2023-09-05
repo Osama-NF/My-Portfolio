@@ -36,6 +36,10 @@
         display: block;
     }
 
+    #skill-table td {
+        display: revert;
+    }
+
 }
 
 /* ============== Small Screens Desktops ============= */
