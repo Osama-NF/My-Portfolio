@@ -6,11 +6,11 @@
 const THEMES = [
     lightTheme = {
         header: {
-            bg: "#659dbd",
+            bg: "url('../img/bg/on-header.svg')", //#659dbd
             text: "#000"
         },
         main: {
-            bg: "#daad86",
+            bg: "url('../img/bg/on-body.svg')", // #daad86
             text: "#000"
         },
         btn: {
@@ -35,11 +35,11 @@ const THEMES = [
     
     darkTheme = {
         header: {
-            bg: "#361e1e",
+            bg: "url(../img/bg/off-header.svg)", // #361e1e
             text: "#eee"
         },
         main: {
-            bg: "#201811",
+            bg: "url(../img/bg/off-body.svg)",
             text: "#eee"
         },
         btn: {
@@ -50,7 +50,7 @@ const THEMES = [
         },
         pages: {
             border: "#000",
-            shadow: "#361e1e",
+            shadow: "#99738e",
             inner: {
                 bg: "#361e1e",
                 text: "#eee"

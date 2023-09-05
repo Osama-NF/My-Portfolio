@@ -35,7 +35,7 @@ html, * {
 
 body {
     font-family: arial, verdana tahoma, "trebuchet MS", "times new roman", georgia garamond, 'Courier New', "brush script MT", 'amiri';
-    background-color: var(--main-bg);
+    background: var(--main-bg);
     color: var(--main-text);
     height: 100vh;
     display: flex;
