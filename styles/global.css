@@ -1,11 +1,11 @@
 /* Leave this as a fallback root variables, in case js file didn't work */
 :root {
     /* Header */
-    --header-bg: #659dbd;
+    --header-bg: url('../img/bg/on-header.svg'); /* #659dbd */
     --header-text: #000;
 
     /* Main */
-    --main-bg: #daad86;
+    --main-bg: url('../img/bg/on-body.svg'); /* #daad86 */
     --main-text: #000;
     
     /* Buttons */
