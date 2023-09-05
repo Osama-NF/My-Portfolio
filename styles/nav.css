@@ -10,7 +10,7 @@
     font-size: 1.1rem;
     width: 80%;
     padding: 10px;
-    border: 2px solid var(--btn-border);
+    /* border: 2px solid var(--btn-border); */
     background-color: var(--btn-bg);
     color: var(--btn-text);
     box-shadow: 1px 1px 5px  var(--btn-shadow);

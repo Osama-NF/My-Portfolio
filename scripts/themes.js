@@ -6,7 +6,7 @@
 const THEMES = [
     lightTheme = {
         header: {
-            bg: "url('../img/bg/on-header.svg')", //#659dbd
+            bg: "#659dbd", //#659dbd
             text: "#000"
         },
         main: {
@@ -43,20 +43,20 @@ const THEMES = [
             text: "#eee"
         },
         btn: {
-            bg: "#99738e",
+            bg: "#795548",
             text: "#000",
             border: "#4a4749",
-            shadow: "#ffb6c6"
+            shadow: "#000"
         },
         pages: {
             border: "#000",
-            shadow: "#99738e",
+            shadow: "#795548",
             inner: {
                 bg: "#361e1e",
                 text: "#eee"
             },
             outer: {
-                bg: "#99738e",
+                bg: "#795548",
                 text: "#000"
             }
         }

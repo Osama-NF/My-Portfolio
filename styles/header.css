@@ -46,7 +46,7 @@ header {
     padding: 15px;
     background-color: var(--btn-bg);
     color: var(--btn-text);
-    border: 1px solid var(--btn-border);
+    /* border: 1px solid var(--btn-border); */
     box-shadow: 0 0 5px var(--btn-shadow);
     cursor: pointer;
     margin: 0 5px;
