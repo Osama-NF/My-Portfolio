@@ -39,7 +39,10 @@
     font-size: 1.75em;
     text-align: center;
 }
-.page hr {margin: 10px 0;}
+.page .hr {
+    display: flex;
+    justify-content: center;
+}
 
 
 

@@ -36,6 +36,8 @@ html, * {
 body {
     font-family: arial, verdana tahoma, "trebuchet MS", "times new roman", georgia garamond, 'Courier New', "brush script MT", 'amiri';
     background: var(--main-bg);
+    background-size: cover;
+    background-repeat: no-repeat;
     color: var(--main-text);
     height: 100vh;
     display: flex;
