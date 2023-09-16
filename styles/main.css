@@ -1,8 +1,0 @@
-main {
-    flex: 13;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-main > div {height: 100%;}
