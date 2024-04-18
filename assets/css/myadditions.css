@@ -1,3 +1,8 @@
+:root {
+    --cert-size: 15rem;
+    --cert-size-small: 4rem;
+}
+
 a.image {
     pointer-events: none;
 }
@@ -25,13 +30,41 @@ a.image {
     flex-direction: column;
 }
 
+/* Edit cert section */
+#certs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cert {
+    width: var(--cert-size);
+    margin: 5px;
+}
+.cert img {
+    width: var(--cert-size);
+    height: var(--cert-size);
+    user-select: none;
+}
+.cert .text {
+    display: none;
+}
+
 @media screen and (max-width: 980px) {
-    
     .features {
         display: flex !important;
     }
+    
     .features section {
         width: 50%;
+    }
+
+    .cert {
+        width: var(--cert-size-small);
+    }
+    .cert img {
+        width: var(--cert-size-small);
+        height: var(--cert-size-small);
     }
 
     .features section:nth-child(2n) {
